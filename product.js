@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const {Schema} = mongoose;
  
 main().catch(err => console.log(err));
 async function main() {
@@ -7,7 +8,7 @@ async function main() {
 }
 
 // Define a schema for a user
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
     name: String,
     age: Number,
     addresses: [
